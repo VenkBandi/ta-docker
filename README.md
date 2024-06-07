@@ -68,6 +68,7 @@ Use the dockerfile.test to create the container. The docker file uses headless c
 ## Usage
 ```
 docker build -t test -f dockerfile.test .
+# bellow  command runs the container and copies test results Output
 docker run --rm -it -v ${PWD}/Output:/tarobot/Output test ./commands.sh 
 
 ```
