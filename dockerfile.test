@@ -1,0 +1,11 @@
+FROM robot
+
+
+COPY . /tarobot
+WORKDIR /tarobot
+USER  root 
+RUN chmod +x commands.sh
+
+ENV DISPLAY=:99
+
+

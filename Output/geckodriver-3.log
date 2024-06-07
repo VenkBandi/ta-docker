@@ -1,0 +1,23 @@
+1717751548026	geckodriver	INFO	Listening on 127.0.0.1:36057
+1717751548600	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ss" "--remote-debugging-port" "40059" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilew12W8j"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: No GPUs detected via PCI
+
+1717751548916	Marionette	INFO	Marionette enabled
+1717751548981	Marionette	INFO	Listening on port 40091
+WebDriver BiDi listening on ws://127.0.0.1:40059
+Read port: 40091
+1717751549183	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:40059/devtools/browser/b77c1c2a-4643-4195-a1b7-edc0956cd4ae
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1717751557104	Marionette	INFO	Stopped listening on port 40091
+JavaScript warning: https://www.saucedemo.com/static/js/2.c39c1971.chunk.js, line 2: Script terminated by timeout at:
+_@https://www.saucedemo.com/static/js/2.c39c1971.chunk.js:2:29258
+t.default/o/</v.current<@https://www.saucedemo.com/static/js/2.c39c1971.chunk.js:2:30482
+

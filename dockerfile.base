@@ -1,0 +1,3 @@
+FROM ppodgorsek/robot-framework
+COPY . tarobot
+WORKDIR /tarobot
