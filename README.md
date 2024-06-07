@@ -53,19 +53,24 @@ These technologies are combined to create an effective testing framework that au
 ## Test Cases
 | Feature        | As a [role]          | I want [feature]         | So that [benefit]       |
 |----------------|----------------------|--------------------------|-------------------------|
-| Login credential | As a registered user           | I want to log in         | So that I can access the webshopping|
-| Logout | As an user after login      | I want to logout   | So that i can exist the system |
-| Product display arrangments in webpage| As a logedin user      | I want to arrange product catergoies | So that I can view products either in alphbetical order or price order |
-| Product display arrangments in webpage| As a logedin user      | I want to arrange product catergoies | So that I can view products either in alphbetical order or price order |
+| Login credential | As a registered user           | User want to log in         | So that user can access the webshopping|
+| Logout | As an user after login      | User want to logout   | So that user can exist the system |
+| Product display arrangments in webpage| As a logedin user      | I want to arrange product catergoies | So that user can can view products either in alphbetical order or price order |
+| Shopping cart| As a logedin user      | Add items to shopping cart | So that user can order items |
+| Shopping cart| As a loged out user      | access saved shopping cart | So that user can continue shopping |
+
 
 
 
 ## Installation
-
+Use the dockerfile.test to create the container. The docker file uses headless chrome and headless firefox. 
 
 ## Usage
+```
+docker build -t test -f dockerfile.test .
+docker run --rm -it -v ${PWD}/Output:/tarobot/Output test ./commands.sh 
 
-
+```
 
 ## Contributing
 
