@@ -1,9 +1,0 @@
-FROM robot
-
-
-COPY . /tarobot
-WORKDIR /tarobot
-USER  root 
-ENV DISPLAY=:99
-
-
