@@ -17,7 +17,7 @@ LoginTestwithAcceptedUsernames    ${username}    ${password}
 Valid login
     [Arguments]    ${username}    ${password}
     [Tags]    Acceptedusers
-    Open my Browser in firefox
+    Open headless Browser in firefox
     Input username    ${username}
     Input pwd    ${password}
     Click login button

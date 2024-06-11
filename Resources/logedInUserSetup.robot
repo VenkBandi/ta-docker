@@ -16,14 +16,14 @@ ${shopingcarticon}    shopping_cart_container
 
 *** Keywords ***
 Open loged in Window in chrome
-    Open my Browser in chrome
+    Open headless Browser in chrome    
     Input username    standard_user
     Input pwd    secret_sauce 
     Click login button  
     Sleep    2s
 
 Open loged in Window in firefox
-    Open my Browser in firefox
+    Open headless Browser in firefox
     Input username    standard_user
     Input pwd    secret_sauce 
     Click login button  

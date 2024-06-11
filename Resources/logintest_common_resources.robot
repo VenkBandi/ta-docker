@@ -12,21 +12,27 @@ ${REMOTE_URL}  ${EMPTY}
 
 
 *** Keywords ***
-Open my Browser in chrome
-    Open Browser     ${URL}    headlesschrome 
-    Maximize Browser Window
-    Set Selenium Implicit Wait    5
+Open headless Browser in chrome
+    ${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    Call Method  ${chrome_options}  add_argument  --headless
+    Call Method  ${chrome_options}  add_argument  --no-sandbox
+    Call Method  ${chrome_options}  add_argument  --disable-dev-shm-usage
+    Create Webdriver  Chrome  options=${chrome_options}
+    Go To  ${URL}
 
-Open my Browser in firefox
-    Open Browser     ${URL}    headlessfirefox 
-    Maximize Browser Window
-    Set Selenium Implicit Wait    5
+
+
+Open headless Browser in firefox
+    ${firefox_options}=  Evaluate  sys.modules['selenium.webdriver'].FirefoxOptions()  sys, selenium.webdriver
+    Call Method  ${firefox_options}  add_argument  -headless
+    Call Method  ${firefox_options}  add_argument  -no-sandbox
+    Call Method  ${firefox_options}  add_argument  -disable-dev-shm-usage
+    Create Webdriver  Firefox  options=${firefox_options}
+    Go To  ${url}
 
 Close Browsers
     Close All Browsers
 
-Open Login Page
-    Go To    ${URL}
 
 Input username
     [Arguments]    ${username}

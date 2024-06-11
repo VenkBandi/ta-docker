@@ -17,7 +17,7 @@ LoginTestwithAcceptedUsernames    ${username}    ${password}
 Valid login
     [Arguments]    ${username}    ${password}
     [Tags]    Acceptedusers
-    Open my Browser in chrome
+    Open headless Browser in chrome
     Input username    ${username}
     Input pwd    ${password}
     Click login button

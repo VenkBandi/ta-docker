@@ -1,3 +1,5 @@
 FROM ppodgorsek/robot-framework
-COPY . tarobot
+USER  root 
+COPY . /tarobot
 WORKDIR /tarobot
+RUN chmod +x commands.sh
